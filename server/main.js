@@ -32,6 +32,10 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.get("/api", (req, res) => {
+    res.send("Hello World!");
+  });
+
 app.use("/api/missings", require("./controllers/missing"));
 app.use('/public', express.static(__dirname + '/public'));
 
