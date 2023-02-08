@@ -35,7 +35,7 @@ app.get("/api", (req, res) => {
 });
 
 app.use("/api/missings", require("./controllers/missing"));
-app.use("/api/public", express.static(__dirname + "/public"));
+// app.use("/api/public", express.static(__dirname + "/public"));
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${process.env.PORT}!`);
