@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
         .then(missing => {
             const photo = req.files ? req.files.photo : null;
 
-            photo && photo.mv(__dirname + `/../public/images/${missing._id}.jpg`, err => {
+            photo && photo.mv(__dirname + `/../../client/static/images/${missing._id}.jpg`, err => {
                 if (err) {
                     console.log(err);
                 }
