@@ -1,5 +1,5 @@
 <script>
-  let params = " ";
+  let params = "";
 </script>
 
 <svelte:head>
