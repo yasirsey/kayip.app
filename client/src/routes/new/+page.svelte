@@ -35,7 +35,7 @@
 
 <section class="container">
   <p class="mt-2 text-center">
-    <span class="h4"><b>Lütfen sadece bulunan insanların bilgilerini girin.</b> <br/>Bu veriler, depremzedelerin sevdiklerini bulmasına yardımcı olacaktır.</span>
+    <b>Lütfen sadece bulunan insanların bilgilerini girin.</b>Aradıklarınız için kayıt oluşturmayın.<br/>
   </p>
   {#if message == ""}
     <div>
