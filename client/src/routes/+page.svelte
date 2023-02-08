@@ -7,7 +7,7 @@
   let missingCount = 0;
 
   onMount(async () => {
-    const response = await fetch(`http://localhost:5000/api/missings/count`);
+    const response = await fetch(`/api/missings/count`);
 
     const data = await response.json();
 
