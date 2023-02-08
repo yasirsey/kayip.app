@@ -34,6 +34,9 @@
 </svelte:head>
 
 <section class="container">
+  <p class="mt-2 text-center">
+    <span class="h4"><b>Lütfen sadece bulunan insanların bilgilerini girin.</b> <br/>Bu veriler, depremzedelerin sevdiklerini bulmasına yardımcı olacaktır.</span>
+  </p>
   {#if message == ""}
     <div>
       <div class="mb-3">
