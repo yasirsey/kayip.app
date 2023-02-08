@@ -28,7 +28,12 @@ app.use(
   })
 );
 app.use(express.json());
-app.use(fileUpload());
+app.use(fileUpload({
+  useTempFiles : true,
+  tempFileDir : '/tmp/'
+}));
+
+
 
 app.get("/api", (req, res) => {
   res.send("Hello World!");
