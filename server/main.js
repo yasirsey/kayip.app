@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/missings", require("./controllers/missing"));
+app.use("/api/missings", require("./controllers/missing"));
 app.use('/public', express.static(__dirname + '/public'));
 
 app.listen(process.env.PORT, () => {
