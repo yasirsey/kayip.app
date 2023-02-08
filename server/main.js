@@ -33,8 +33,6 @@ app.use(fileUpload({
   tempFileDir : '/tmp/'
 }));
 
-
-
 app.get("/api", (req, res) => {
   res.send("Hello World!");
 });
