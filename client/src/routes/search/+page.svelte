@@ -35,7 +35,7 @@
     <div class="card mt-3" style="width: 300px;">
       <div
         class="imageBox"
-        style="background: url('http://localhost:5000/public/images/{missing._id}.jpg')"
+        style="background: url('%sveltekit.assets%/images/{missing._id}.jpg')"
       />
       <div class="card-body">
         <h5 class="card-title">Adı: {missing.fullName || 'bilinmiyor'}</h5>
