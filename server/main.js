@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const fileUpload = require('express-fileupload');
+const fileUpload = require("express-fileupload");
 
 const app = express();
 
@@ -14,30 +14,28 @@ require("dotenv").config();
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {}, (err) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Connected to MongoDB");
-    }
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Connected to MongoDB");
+  }
 });
 
 // Middleware
-app.use(cors({
+app.use(
+  cors({
     origin: "*",
-}));
+  })
+);
 app.use(express.json());
 app.use(fileUpload());
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/api", (req, res) => {
-    res.send("Hello World!");
-  });
-
 app.use("/api/missings", require("./controllers/missing"));
-app.use('/public', express.static(__dirname + '/public'));
+app.use("/public", express.static(__dirname + "/public"));
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${process.env.PORT}!`);

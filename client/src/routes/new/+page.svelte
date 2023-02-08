@@ -16,7 +16,7 @@
     data.append("description", description);
     data.append("photo", files[0]);
 
-    const response = await fetch("http://kayip.app:5000/missings", {
+    const response = await fetch("/api/missings", {
       method: "POST",
       body: data,
     });
