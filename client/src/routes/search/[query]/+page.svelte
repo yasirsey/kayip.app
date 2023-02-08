@@ -2,7 +2,7 @@
     import { page } from "$app/stores";
     import { onMount } from "svelte";
   
-    const query = $page.url.pathname.split("/")[2].replace('%20', '');
+    const query = $page.url.pathname.split("/")[2];
     let missings  = []
   
     onMount(async () => {
