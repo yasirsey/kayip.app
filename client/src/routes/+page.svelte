@@ -1,5 +1,18 @@
 <script>
+  import { onMount } from "svelte";
+
+
   let params = "";
+
+  let missingCount = 0;
+
+  onMount(async () => {
+    const response = await fetch(`http://localhost:5000/api/missings/count`);
+
+    const data = await response.json();
+
+    missingCount = data;
+  });
 </script>
 
 <svelte:head>
@@ -13,6 +26,7 @@
     <!-- <br />Birlikte, acıyı hafifletmeyi ve birbirimize yardım etmeyi amaçlıyoruz.
     Lütfen siteyi kötü amaçlarla kullanmayın. -->
   </p>
+  <span class="fs-5 mb-4 text-success fw-bold">Bulunan Sayısı: {missingCount}</span>
   <input
     type="text"
     placeholder="Aramak istediğiniz kişinin adı soyadı"

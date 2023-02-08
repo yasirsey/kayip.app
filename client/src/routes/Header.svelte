@@ -13,10 +13,10 @@
 			</svg>
 			<ul>
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-					<a href="/">Bulunanlar</a>
+					<a href="/">Kayıp Arama</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/new' ? 'page' : undefined}>
-					<a href="/new">Kayıt Ekle</a>
+					<a href="/new">Bulunanları Bildir</a>
 				</li>
 			</ul>
 			<svg viewBox="0 0 2 3" aria-hidden="true">
