@@ -3,7 +3,6 @@ const router = require('express').Router();
 const Missing = require('../models/missing');
 
 router.get('/', (req, res) => {
-    console.log("test");
     const searchParams = req.query.query;
 
     Missing.find({
