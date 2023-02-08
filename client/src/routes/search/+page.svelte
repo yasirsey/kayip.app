@@ -7,7 +7,7 @@
 
   onMount(async () => {
     const response = await fetch(
-      `http://localhost:5000/missings?query=${query}`
+      `http://kayip.app:5000/missings?query=${query}`
     );
 
     const data = await response.json();
