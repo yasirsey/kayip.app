@@ -34,8 +34,8 @@
 </svelte:head>
 
 <section class="container">
-  <p class="mt-2 text-center">
-    <b>Lütfen sadece bulunan insanların bilgilerini girin.</b>Aradıklarınız için kayıt oluşturmayın.<br/>
+  <p class="mt-2 text-center fs-4">
+    <b>Lütfen sadece bulunan insanların bilgilerini girin.</b><br/>Aradıklarınız için kayıt oluşturmayın.
   </p>
   {#if message == ""}
     <div>
