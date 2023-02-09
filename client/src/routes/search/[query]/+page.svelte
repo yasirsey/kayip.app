@@ -37,7 +37,7 @@
   
   <section class="container mt-5">
     <p class="mt-2 text-center">
-      <span>{query}</span> ile eşleşen <span>{missings.length}</span> kişi bulundu.
+      <span>{query.replace('%20', ' ').replace('%C4%B1', 'ı').replace('%C3%A7', 'ç').replace('%C5%9F', 'ş').replace('%C3%B6', 'ö').replace('%C3%BC', 'ü').replace('%C4%9F', 'ğ').replace('%C4%B0', 'İ').replace('%C4%B0', 'İ').replace('%C3%87', 'Ç').replace('%C5%9E', 'Ş').replace('%C3%96', 'Ö').replace('%C3%9C', 'Ü').replace('%C4%9E', 'Ğ')}</span> ile eşleşen <span>{missings.length}</span> kişi bulundu.
       <br />
       {#if missings.length < 1}
       <span>Lütfen ilerleyen saatlerde tekrar deneyin. Umudunuzu yitirmeyin.</span>
