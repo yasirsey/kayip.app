@@ -1,8 +1,22 @@
 <script>
     import { page } from "$app/stores";
+    const query = $page.url.pathname.split("/")[2]
+            .replace('%20', ' ')
+            .replace('%C4%B1', 'ı')
+            .replace('%C3%A7', 'ç')
+            .replace('%C5%9F', 'ş')
+            .replace('%C3%B6', 'ö')
+            .replace('%C3%BC', 'ü')
+            .replace('%C4%9F', 'ğ')
+            .replace('%C4%B0', 'İ')
+            .replace('%C4%B0', 'İ')
+            .replace('%C3%87', 'Ç')
+            .replace('%C5%9E', 'Ş')
+            .replace('%C3%96', 'Ö')
+            .replace('%C3%9C', 'Ü')
+            .replace('%C4%9E', 'Ğ');
+
     import { onMount } from "svelte";
-  
-    const query = $page.url.pathname.split("/")[2].replace('%20', ' ');
     let missings  = []
   
     onMount(async () => {
