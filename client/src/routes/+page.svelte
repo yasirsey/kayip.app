@@ -1,46 +1,15 @@
-<script>
-  import { onMount } from "svelte";
-
-
-  let params = "";
-
-  let missingCount = 0;
-
-  onMount(async () => {
-    const response = await fetch(`/api/missings/count`);
-
-    const data = await response.json();
-
-    missingCount = data;
-  });
-</script>
-
 <svelte:head>
   <title>Ara</title>
 </svelte:head>
 
 <section class="container">
   <p class="text-center lead">
-    Bu platform, deprem sonrası kaybolan tanıdıkları bulmak ve bulunanları
-    kaydetmek için gönüllü yardım sağlamaya odaklanır.
-    <!-- <br />Birlikte, acıyı hafifletmeyi ve birbirimize yardım etmeyi amaçlıyoruz.
-    Lütfen siteyi kötü amaçlarla kullanmayın. -->
-  </p>
-  <span class="fs-5 mb-4 text-success fw-bold">Bulunan Sayısı: {missingCount}</span>
-  <input
-    type="text"
-    placeholder="Aramak istediğiniz kişinin adı soyadı"
-    class="mb-3"
-    bind:value={params}
-  />
-  <a class="btn btn-primary w-100 p-2 fs-5" href="/search/{params}">Ara</a>
-
-  <p class="mt-2 text-center">
-    Yoğunluk yaratmamak için siteyi sadece ihtiyaç duyduğunuzda kullanın.
+    Sorgulama ekranımız kalıcı olarak kaldırılmıştır. Sorgulama işlemlerinizi <a class="fw-bold"
+      href="https://enabiz.gov.tr">enabiz.gov.tr</a
+    > adresine giriş yaparak Hasta ve Hasta Yakını Bilgilendirme kısmından yapabilirsiniz.
+    <br/>
     <br />
-    <a class="text-success" href="https://t.me/kayip_app"
-      >İletişime geçmek için tıklayın</a
-    >.
+    <span class="">Herkese geçmiş olsun diliyoruz. 🙏</span>
   </p>
 </section>
 

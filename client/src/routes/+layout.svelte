@@ -8,15 +8,9 @@
 </svelte:head>
 
 <div class="app">
-	<Header />
-
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p>Sitenin geliştirilmesine katkıda bulunmak için <a href="https://t.me/kayip_app">tıklayın</a>.</p>
-	</footer>
 </div>
 
 <style>
