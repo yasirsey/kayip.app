@@ -10,6 +10,11 @@
     <br/>
     <br />
     <span class="">Herkese geçmiş olsun diliyoruz. 🙏</span>
+    <br />
+    <br />
+    <span>(Yardımcı olabileceğimiz bir şey olursa <a class="fw-bold"
+      href="https://t.me/kayip_app">bizlere ulaşabilirsiniz</a
+      >.)</span>
   </p>
 </section>
 
