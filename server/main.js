@@ -34,7 +34,7 @@ app.use(fileUpload({
 }));
 
 app.get("/api", (req, res) => {
-  res.send("Hello World!");
+  res.send("kayip.app API sistemi");
 });
 
 app.use("/api/missings", require("./controllers/missing"));
